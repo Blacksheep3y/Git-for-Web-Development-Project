@@ -1,0 +1,93 @@
+Link to Codepen Assignment:
+https://codepen.io/Blacksheep3y/pen/vYEaJYr?editors=1100
+
+Regular Questions
+
+    1. What is Semantic HTML? 
+        A: It's using html elements/tags to markup a web document in order to reinforce the semantics or the "meaning" behind the information in the document rather than merely to define its presentation or "look".  
+    2. What is HTML used for? 
+        A: Html is used for structuring information in a document in a language that can be interpreted by a web browser / the internet.
+    3. What is an attribute and where do we put it? 
+        A: An attribute provides additional information about an html element and usually come in name/value pairs like name = "value" it is also located only within the opening tag <> of an html element.
+    4. What is the h1 tag used for? How many times should I use it on a page?
+        A: The H1 tag is used for defining the main heading of a web page, because of this it should typically only be used once and it is considered good practice to do so. 
+    5. Name two tags that have required attributes
+        A: 1) the anchor tag <a> it has a required href attribute in order to point to the directory or webpage you are anchoring to. 2) The img tag <img> it has a required src attribute in order to point the element to an image you are linking to.
+    6. What do we put in the head of our HTML document? 
+        A: In the head of the html goes the tags that are essential to the information about the document, or the metadata, these include tags like the <title>, <meta>, <script>, <style> 
+    7. What is an id? 
+        A: An id is an html attribute that is used to specifically identify a particular element, the id = "value" naming scheme is how an id is created and the value denotes the identification of the element which can be referenced via the #.
+    8. What elements can I add an id to? 
+        A: Any html element and by JavaScript (via the HTML DOM) to manipulate the element
+    9. How many times can I use the same id on a page? 
+        A: once, but you can use a class instead to mitigate this.   
+    10. What is a class? 
+        A: A class is an attribute available in HTML that is used to classify a group of elements.
+    11. What elements can I add a class to? 
+        A: A class can be added to any html element.
+    12. How many times can I use the same class on a page? 
+        A: There is no limit as far as I know.
+    13. How do I get my link to open in a new tab?
+        A: Add target="_blank" to your <a> anchor tag.
+    14. What is the alt attribute used for? 
+        A: It is used to display alternative text to be rendered when the element to which it is applied can not be displayed or rendered. 
+    15. How do I reference an id?
+        A: You use the # symbol followed by the value given to the id. ex) #sectionOne
+    16. What is the difference between a section and a div
+        A: The section tag defines sections in a document like chapters, headers, footers whereas div tag defines a division in an HTML document. The div tag is also used to group block elements so they can be formatted with css.
+    17. What is CSS used for? 
+        A: It is a cascading style sheet, so it is essentially used to present a document utilizing things like colors, fonts, sizes, to add design to a webpage. 
+    18. How do we select an element? Example - every h2 on the page
+        A: Well in css, we just call the element by name such as "h2" and then we use the {} brackets following the element name to add our styling.
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        A: a class is used to identify or classify multiple elements, I would use a class to style all h2 headings on a webpage for example to look a certain way and keep consistency. or all paragraphs. An id is used to specifically target just one element, I would use an id if I wanted to specify the way a specific div should appear or to stylize a heading or an element in which I have used multiple times and need an id to uniquely identify only one.  
+    20. How do we select classes in CSS?
+        A: you must use the dot notation '.' followed by the value of the class ex).sandwhiches
+    21. How do we select a p element with a single class of “human”?
+        A: p.human {}
+    22. What is a parent child selector? When would this be useful?
+        A: It is a parameter in which the selector selects all the elements that are a direct child of the specificied parent element. It would be useful for inheriting traits of the parent element into the existing child elements.    
+    23. How do you select all links within a div with the class of sidebar?
+        A: div.sidebar a {}
+    24. What is a pseudo selector?
+        A: It is used to define a special state of an element, such as when an element is :hovered over or a link is :visited etc.
+    25. What do we use to change the spacing between lines?
+        A: the line-height property. ex) line-height: 10px;
+    26. What do we use to change the spacing between letters?
+        A: the letter-spacing property. ex) letter-spacing: 6px;
+    27. What do we use to to change everything to uppercase? lowercase? Capitalize?
+        A: text-transform: uppercase/lowercase/Capitalize
+    28. How do I add a 1px border around my div that is dotted and black?
+        A: div {border: 1px dotted black;}
+    29. How do I select everything on the page? 
+        A: *{} universal selector
+    30. How do I write a comment in CSS?
+        A: /* this is a comment in css, use the symbols wrapped around us to start and end a comment */
+    31. How do I find out what file I am in, when I am using the command line? 
+        A: pwd to print working directory
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+        A: ls to list all files/folders
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+        A: rm file-name, you have to be careful because it is irreversable.
+    34. Why should I use version control? 
+        A: It is best practice because you can always recall specific versions of the file you've worked on later.
+    35. How often should I commit to github?
+        A: Frequently, when significant changes have been made that would alter the way a file functions accordingly. 
+    36. What is the command we would use to push our repo up to github? 
+        A: git push -u origin branch-name
+    37. Walk me through Lambda's git flow. 
+        A: Fork / Add TL Collaborator / Clone Repo Github / git clone <link-to-repo> / cd <repo-name> / git checkout -b 'firstname-lastname' / git add. / git commit -m 'message' / git push -u origin branch-name / go back to fork on Github change ur branch name to 'firstname-lastname' new pull request / change base repo / add TL to reviewers / submit pull request 
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+        A: display: inline means that the element is displayed inline, inside the current block on the same line.
+        display: block Takes up the full width available, with a new line before and after (display:block;)
+    2. What happens when an element is positioned absolutely? 
+        A: An absolute positioned element is positioned relative to the nearest positioned ancestor, instead of relative to the viewport. Basically always sticking to the specificed position of its positioned ancestor.
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+        A: Can use display: flex as well as the use of containers.
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        A: idk
+    5. In your own words, explain the box model. What is the fix for the box model?
+        A: The box model is a structure in css that utilizes the padding around an div/element, the margins, the width and height, its basically the idea that everything on a web document can exist within a boxed structure to organize the information displayed.  
